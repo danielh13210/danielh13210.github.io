@@ -6,5 +6,5 @@ function hide_all() {
     }
 }
 function switch_to(slide_id) {
-    location.replace(slide_id+".html");
+    location.href=slide_id+".html";
 }
