@@ -1,4 +1,4 @@
-disable_rightclick(["background", "category"], ["switcher", "content"], ["li", "button", "body", "h2", "h3", "h4"]);
+disable_rightclick(["background", "category"], ["switcher", "about-content"], ["li", "button", "body", "h2", "h3", "h4"]);
 var url = location.href;
 var hash_pos = url.indexOf("#");
 var id = "";
