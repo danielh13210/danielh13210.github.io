@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>
-        Daniel's Portfolio
-    </title>
-    <link rel="stylesheet" href="/shared/styles.css">
-    <script src="/shared/slide.js"></script>
-</head>
-
-<body>
-    <div id="about" class="section">
-        <div class="background"
-            style="background-image: url('/shared/danny.jpg');background-size: contain;background-repeat: repeat-x;width:1400px;">
-            <h2 class="category category-1l">About me</h2>
-        </div>
-        <p id="about-content">
-            Hi, I am Daniel. I was born on August 2012. I have a strong interest in electronics and computers throughout
-            my life.<br><br>
-            When I was four, my parents gave me a toy to learn electronics, called Snap Circuits. Since
-            then, I began to love electronics a lot. Soon, I had an electronics teacher who taught me about Boolean
-            algebra and logic gates. He introduced me to Arduino which was the first time I learned to program. When I
-            was six, I started learning Python from a book called Hello World.<br><br>
-            A year later, I started learning Nand2Tetris. There were two teachers who helped me to finish this course.
-            It took me about a year to finish it. This course helped me to understand how computers work from just one
-            component called &quot;NAND&quot; up to an operating system. I also played <a href="https://nandgame.com" target="_blank">NandGame</a> which is based on Nand2Tetris.
-            <br><br>
-            I started programming every day since I could use Arduino. I have done many projects, including this
-            portfolio.
-            Since I am homeschooled, I study by myself through books and online learning platforms.
-            Also, I did some hardware projects. The last project was my 8-bit computer, which I built by following a
-            series of YouTube videos.
-            Until now, I keep learning, but sometimes unable to study only by myself because some of the subjects are
-            too hard to study without a mentor, or require facilities that are currently out of my reach. Therefore, I
-            hope that I can be accepted at
-            a university, where I would have a mentor and laboratory facilities.<br><br>
-            With my current skillset, I am able to help my grandparents when they have problems with their smartphone or
-            laptop software. I also can help my father with his computer software and connections.<br><br>
-            Because I want to learn more about chip &amp; motherboard design, I found that your university has a module
-            about chip design in your Computer Engineering programme, whereas, not many universities offer this module.
-            I hope after finishing this programme, I will be able to repair mobile devices, laptops, and desktop
-            computers. By having this knowledge, I will be more useful for people. I also want to make a smartphone,
-            tablet, and laptop that will be more repairable, hence more sustainable.
-
-        </p>
-    </div>
-    <a href="javascript:switch_to('home');" id="switcher" accesskey="q">Back to home</a>
-</body>
+<script>
+    function getCookie(name) {
+        return document.cookie.split("; ").find((row) => row.startsWith(`${name}=`))?.split("=")[1];
+    }
+    let context=getCookie("context");
+    if(context)location.href="about."+getCookie("context")+".html";
+    else location.href="about.default.html";
+</script>
